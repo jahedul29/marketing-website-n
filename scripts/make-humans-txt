@@ -1,0 +1,81 @@
+#!/bin/bash
+
+set -e -o pipefail
+
+# Set the proper speadsheet id (in the url).
+# Make sure that the file can be read by user with the link.
+SPREADSHEET_ID="1rSyUsnrsjrJVrmdAAXrp3aAomijXNYjlZgZtyEhEhU8"
+
+# This is our awk csv to json process.
+
+AWK_SCRIPT=$(cat <<'AWK'
+{
+	print($1 "\n" $3 " | " $4 "\n")
+}
+AWK
+)
+
+echo "🐹 Downloading and crunching humans..."
+
+{
+	cat << HUMANS
+######                          #     #                   #     #
+#     # ###### #    # #    #    #     # #    # # #####    #     # #    # # #####
+#     # #      #    #  #  #     #     # #    # #   #      #     # #    # #   #
+#     # #####  #    #   ##      ####### #    # #   #      ####### #    # #   #
+#     # #      #    #   ##      #     # #    # #   #      #     # #    # #   #
+#     # #      #    #  #  #     #     # #    # #   #      #     # #    # #   #
+######  ######  ####  #    #    #     #  ####  #   #      #     #  ####  #   #
+
+
+# The humans behind this site
+# Les humains derrière ce site
+# humanstxt.org
+
+Made with love by Deux Huit Huit.
+Fait avec beaucoup d'amour par Deux Huit Huit.
+https://deuxhuithuit.com/
+
+
+/* TEAM */
+/* EQUIPE */
+
+HUMANS
+# Download csv export (first sheet)
+curl -L -s "https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/export?exportFormat=csv" | \
+	# remove first lines
+	tail -n +6 | \
+	# convert csv to json
+	# and save the result into vercel's file
+	awk -F',' "${AWK_SCRIPT}"
+
+cat << HUMANS
+
+Twitter: https://twitter.com/DeuxHuitHuit
+Facebook: https://www.facebook.com/DeuxHuitHuit
+Github: https://github.com/DeuxHuitHuit
+Instagram: http://instagram.com/deuxhuithuit
+Medium: https://medium.com/@DeuxHuitHuit
+Linkedin: https://www.linkedin.com/company/deux-huit-huit
+Paypal: https://paypal.me/DeuxHuitHuit
+npm: https://www.npmjs.com/org/deuxhuithuit
+
+Montréal, Québec, Canada.
+
+
+/* THANKS */
+/* MERCI */
+
+Anybody that contributed to open source projects used in this site.
+À tous ceux qui ont contribué aux logiciels opensources utilisés dans ce site.
+
+/* SITE */
+
+Standards: HTML5, CSS3, ES9+
+Tech: Tailwindcss, Svelte & Sveltekit
+Software: Figma, Visual Studio Code, Blood sweat and tears
+HUMANS
+
+} > static/humans.txt
+
+echo "🌟 static/humans.txt file created!"

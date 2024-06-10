@@ -1,0 +1,30 @@
+@layer components {
+	[data-theme-color],
+	[data-theme-color='grey'] {
+		@apply bg-grey-100;
+	}
+	[data-theme-color='lavender'] {
+		@apply bg-lavender-500;
+	}
+	[data-theme-color='lightblue'] {
+		@apply bg-lightblue-500;
+	}
+	[data-theme-color='mint'] {
+		@apply bg-mint-500;
+	}
+	[data-theme-color='greentea'] {
+		@apply bg-greentea-500;
+	}
+	[data-theme-color='watermelon'] {
+		@apply bg-watermelon-500;
+	}
+	[data-theme-color='wheat'] {
+		@apply bg-wheat-500;
+	}
+	[data-theme-color='champagne'] {
+		@apply bg-champagne-500;
+	}
+	[data-theme-color='white'] {
+		@apply bg-white;
+	}
+}

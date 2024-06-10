@@ -1,0 +1,44 @@
+{
+	"[svelte]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[markdown]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"cSpell.words": [
+		"cacheable",
+		"codegen",
+		"Dismissable",
+		"expirable",
+		"focusables",
+		"lastmod",
+		"maxage",
+		"nvmrc",
+		"prefetch",
+		"starterkit",
+		"sveltekit",
+		"Sveltekit",
+		"tabindex",
+		"tailwindify",
+		"tweened",
+		"urlset",
+		"vhify",
+		"vwify"
+	],
+	"files.exclude": {
+		".svelte-kit": true,
+		".vercel": true
+	},
+	"json.schemas": [
+		{
+			"fileMatch": ["routes.config.json"],
+			"url": ".vscode/routes-schema.json"
+		}
+	]
+}

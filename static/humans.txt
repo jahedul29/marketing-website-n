@@ -1,0 +1,123 @@
+######                          #     #                   #     #
+#     # ###### #    # #    #    #     # #    # # #####    #     # #    # # #####
+#     # #      #    #  #  #     #     # #    # #   #      #     # #    # #   #
+#     # #####  #    #   ##      ####### #    # #   #      ####### #    # #   #
+#     # #      #    #   ##      #     # #    # #   #      #     # #    # #   #
+#     # #      #    #  #  #     #     # #    # #   #      #     # #    # #   #
+######  ######  ####  #    #    #     #  ####  #   #      #     #  ####  #   #
+
+
+# The humans behind this site
+# Les humains derrière ce site
+# humanstxt.org
+
+Made with love by Deux Huit Huit.
+Fait avec beaucoup d'amour par Deux Huit Huit.
+https://deuxhuithuit.com/
+
+
+/* TEAM */
+/* EQUIPE */
+
+Louis-Pierre Chouinard 
+Associé-Fondateur; Design UX-UI | Founder Partner; UX-UI Design
+
+Alex Leduc
+Associé-Fondateur; Directeur des innovations design | Founder Partner; Chief Design Officer
+
+Gabrielle Viau
+Directrice générale; associée | General Director; Partner
+
+Nicolas Brassard-Ferron
+Directeur technique; associé | Chief Technology Officer; Partner
+
+Jésabel St-Jean
+Gestionnaire aux opérations | Operations Manager
+
+Camille Dolbec
+Directrice de comptes | Account Manager
+
+Gabrielle Scalzo
+Cheffe de projets | Project Manager
+
+Geoffrey Dallaire-Gagné
+Chef de projets | Project Manager
+
+Stéphanie Forget
+Gestionnaire de contenu | Content Manager
+
+Amélie Boudreau
+Gestionnaire de contenu | Content Manager
+
+Véronique Cassidy
+Cheffe de projets | Project Manager
+
+Anne Sylvestre
+Directrice de création | Creative Director
+
+Dominic Provost
+Designer de marque | Brand Designer
+
+Marie-France Falardeau
+Productrice | Producer
+
+Laura Charette
+Designer de marque | Brand Designer
+
+Alexia Brideau Francoeur
+Designer UI | UI Designer
+
+Claudia Turcotte
+Conceptrice-rédactrice | Copywriter
+
+Romain Pedeboscq
+Directeur artistique | Artistic Director
+
+Sara Mercille
+Designer UI | UI Designer
+
+Marie-France Latour
+Stratège de marque et de contenu | Brand & Content Strategist
+
+Patrick Martel
+Développeur Full-Stack - Sénior | Full-Stack Developer - Senior
+
+Arnaud Crevier
+Développeur Back-End | Back-End Developer
+
+Félix Guérin
+Développeur | Developer
+
+Valentin Py
+Développeur Front-End | Front-End Developer
+
+Vincent Sylvestre
+Développeur | Developer
+
+Virginie Turcotte
+Responsable communications et partenariat clients | Manager; Communication and partnership
+
+
+Twitter: https://twitter.com/DeuxHuitHuit
+Facebook: https://www.facebook.com/DeuxHuitHuit
+Github: https://github.com/DeuxHuitHuit
+Instagram: http://instagram.com/deuxhuithuit
+Medium: https://medium.com/@DeuxHuitHuit
+Linkedin: https://www.linkedin.com/company/deux-huit-huit
+Paypal: https://paypal.me/DeuxHuitHuit
+npm: https://www.npmjs.com/org/deuxhuithuit
+
+Montréal, Québec, Canada.
+
+
+/* THANKS */
+/* MERCI */
+
+Anybody that contributed to open source projects used in this site.
+À tous ceux qui ont contribué aux logiciels opensources utilisés dans ce site.
+
+/* SITE */
+
+Standards: HTML5, CSS3, ES9+
+Tech: Tailwindcss, Svelte & Sveltekit
+Software: Figma, Visual Studio Code, Blood sweat and tears

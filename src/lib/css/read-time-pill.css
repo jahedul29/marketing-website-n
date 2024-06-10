@@ -1,0 +1,5 @@
+@layer components {
+	._read-time-pill {
+		@apply absolute right-12 top-12 rounded-full bg-white-750-alpha px-8 py-4 text-14 font-medium leading-10 text-grey-900 backdrop-blur-300;
+	}
+}

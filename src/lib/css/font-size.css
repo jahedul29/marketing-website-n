@@ -1,0 +1,29 @@
+@layer utilities {
+	.text-100 {
+		@apply text-14;
+	}
+	.text-200 {
+		@apply text-16;
+	}
+	.text-300 {
+		@apply text-16 bp:text-20;
+	}
+	.text-400 {
+		@apply text-16 bp:text-26;
+	}
+	.text-500 {
+		@apply text-20 bp:text-32;
+	}
+	.text-600 {
+		@apply text-20 bp:text-40;
+	}
+	.text-700 {
+		@apply text-28 bp:text-48;
+	}
+	.text-800 {
+		@apply text-32 bp:text-60;
+	}
+	.text-900 {
+		@apply text-40 bp:text-72;
+	}
+}

@@ -1,0 +1,11 @@
+._image-mask {
+	mask-image: var(--mask);
+	mask-repeat: no-repeat;
+	mask-size: 130%;
+	mask-position: left 50% bottom 0%;
+
+	@screen bp {
+		mask-size: cover;
+		mask-position: left 0% bottom 0%;
+	}
+}

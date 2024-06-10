@@ -1,0 +1,14 @@
+.svelte-kit/**
+static/**
+build/**
+.DS_Store
+node_modules
+package.json
+package-lock.json
+pnpm-lock.yaml
+craft.d.ts
+craft-*.d.ts
+.vercel
+.vercel_build_output
+src/routes/\(docs\)
+coverage

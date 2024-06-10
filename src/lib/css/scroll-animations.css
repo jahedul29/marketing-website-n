@@ -1,0 +1,43 @@
+[data-scroll-visible] {
+	&._scroll-reveal,
+	._scroll-reveal-slider-item {
+		transition: transform 1000ms var(--ease-out-expo), opacity 200ms linear;
+	}
+
+	._scroll-reveal-slider-item {
+		transition-delay: calc(var(--i) * 25ms);
+	}
+
+	._scroll-fade-in,
+	&._scroll-fade-in {
+		transition: opacity 200ms linear;
+	}
+
+	@screen bp {
+		._scroll-fade-in,
+		&._scroll-fade-in {
+			transition-delay: calc(var(--i, 0) * 25ms);
+		}
+
+		._scroll-reveal,
+		&._scroll-reveal {
+			transition-delay: calc(var(--i, 0) * 100ms);
+		}
+	}
+}
+[data-scroll-visible='false'] {
+	&._scroll-reveal {
+		transform: translate3d(0, 3.2rem, 0);
+		opacity: 0;
+	}
+
+	._scroll-reveal-slider-item {
+		transform: translate3d(4rem, 0, 0);
+		opacity: 0;
+	}
+
+	._scroll-fade-in,
+	&._scroll-fade-in {
+		opacity: 0;
+	}
+}

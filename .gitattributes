@@ -1,0 +1,21 @@
+# Set lf for all text files
+* text eol=lf
+# Set fonts to be binary
+*.eot binary
+*.otf binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+# Set images to be binary
+*.png binary
+*.jpeg binary
+*.jpg binary
+*.gif binary
+*.ico binary
+*.webp binary
+# Set documents to be binary
+*.pdf binary
+# Configure url filters
+codegen.ts filter=url
+.env.* filter=url
+app.html ident

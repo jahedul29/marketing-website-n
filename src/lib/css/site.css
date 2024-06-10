@@ -1,0 +1,57 @@
+@layer base {
+	::selection {
+		@apply bg-grey-900;
+		@apply text-white;
+	}
+	::-moz-selection {
+		@apply bg-grey-900;
+		@apply text-white;
+	}
+
+	.text-white ::selection {
+		@apply bg-white;
+		@apply text-grey-900;
+	}
+	.text-white ::-moz-selection {
+		@apply bg-white;
+		@apply text-grey-900;
+	}
+
+	.text-white::selection {
+		@apply bg-white;
+		@apply text-grey-900;
+	}
+	.text-white::-moz-selection {
+		@apply bg-white;
+		@apply text-grey-900;
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	@media (prefers-reduced-motion) {
+		html {
+			scroll-behavior: auto;
+		}
+	}
+
+	body {
+		--ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+
+		/* Set default color to all elements with a weak specificity */
+		@apply font-base text-grey-900;
+		overflow-y: scroll;
+	}
+
+	/* Use a nicer default focus style */
+	a,
+	button,
+	[tabindex]:not([tabindex='-1']) {
+		@apply focus:outline-none focus-visible:ring-4 focus-visible:ring-blue-500;
+	}
+
+	details > summary {
+		list-style: none;
+	}
+}

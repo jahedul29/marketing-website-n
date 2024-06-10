@@ -1,0 +1,38 @@
+._submenu-link-title {
+	@apply text-16 font-medium leading-10;
+}
+
+._submenu-link-text {
+	@apply text-16 leading-30 text-black-750-alpha;
+}
+
+@screen bp {
+	._submenu-item {
+		transition: transform 1000ms var(--ease-out-expo), opacity 200ms linear;
+		opacity: 0;
+	}
+
+	.down ._submenu-item {
+		transform: translateY(-3rem);
+	}
+
+	.left.enter ._submenu-item {
+		transform: translateX(-3rem);
+	}
+	.left.exit ._submenu-item {
+		transform: translateX(3rem);
+	}
+
+	.right.enter ._submenu-item {
+		transform: translateX(3rem);
+	}
+	.right.exit ._submenu-item {
+		transform: translateX(-3rem);
+	}
+
+	.open.open ._submenu-item {
+		transition-delay: calc(var(--i) * 25ms + 100ms);
+		transform: none;
+		opacity: 1;
+	}
+}

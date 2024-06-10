@@ -1,0 +1,101 @@
+{
+	"symbolic": {
+		"1.": "The symbolic section contains the 2 variations, light and darks, of our symbolic colors",
+		"2.": "This is what becomes tailwind classes that are defined as having both colors",
+		"light": {
+			"theme-color": "black.pure",
+			"normal": {
+				"main": "white.pure",
+				"alt": "white-smoke.900",
+				"mid": "white-smoke.600",
+				"shade-400": "white-smoke.300",
+				"shade-300": "white-smoke.200",
+				"shade-200": "white-smoke.100",
+				"shade-100": "white-smoke.50",
+				"brand": "brand.invert"
+			},
+			"invert": {
+				"main": "black.pure",
+				"alt": "black-smoke.900",
+				"mid": "black-smoke.600",
+				"shade-400": "black-smoke.300",
+				"shade-300": "black-smoke.200",
+				"shade-200": "black-smoke.100",
+				"shade-100": "black-smoke.50",
+				"brand": "brand.main"
+			}
+		},
+		"dark": {
+			"theme-color": "black.pure",
+			"normal": {
+				"main": "black.pure",
+				"alt": "black-smoke.900",
+				"mid": "black-smoke.600",
+				"shade-400": "black-smoke.300",
+				"shade-300": "black-smoke.200",
+				"shade-200": "black-smoke.100",
+				"shade-100": "black-smoke.50",
+				"brand": "brand.main"
+			},
+			"invert": {
+				"main": "white.pure",
+				"alt": "white-smoke.900",
+				"mid": "white-smoke.600",
+				"shade-400": "white-smoke.300",
+				"shade-300": "white-smoke.200",
+				"shade-200": "white-smoke.100",
+				"shade-100": "white-smoke.50",
+				"brand": "brand.invert"
+			}
+		}
+	},
+	"main": {
+		"blue": "#01B5F1",
+		"black": "#131313",
+		"white": "#FFFFFF"
+	},
+	"mono-solid": {
+		"900": "#131313",
+		"750": "#A1A6A4",
+		"500": "#C7CED1",
+		"250": "#E4E7E9",
+		"100": "#F1F2F3"
+	},
+	"white-trans": {
+		"900": "rgba(255, 255, 255, 0.9)",
+		"750": "rgba(255, 255, 255, 0.7)"
+	},
+	"black-trans": {
+		"900": "rgba(19, 19, 19, 0.9)",
+		"700": "rgba(19, 19, 19, 0.7)",
+		"500": "rgba(19, 19, 19, 0.5)",
+		"300": "rgba(19, 19, 19, 0.3)",
+		"100": "rgba(19, 19, 19, 0.1)"
+	},
+	"secondary": {
+		"lavender": {
+			"500": "#E4D4F7"
+		},
+		"uranus": {
+			"500": "#C2E6FF"
+		},
+		"mint": {
+			"500": "#C4EEE3"
+		},
+		"green-tea": {
+			"500": "#DDF0C2"
+		},
+		"watermelon": {
+			"500": "#FFD2C2"
+		},
+		"wheat": {
+			"500": "#FFEAC2",
+			"trans": {
+				"500": ""
+			}
+		},
+		"champagne": {
+			"500": "#E2D4CF"
+		}
+	}
+}

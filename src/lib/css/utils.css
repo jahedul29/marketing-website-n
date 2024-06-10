@@ -1,0 +1,20 @@
+@layer utilities {
+	.clearfix {
+		overflow: auto;
+		&::after {
+			content: '';
+			visibility: hidden;
+			display: block;
+			height: 0;
+			clear: both;
+		}
+	}
+
+	.appearance-auto {
+		appearance: auto;
+	}
+
+	.perspective-1000 {
+		perspective: 1000px;
+	}
+}

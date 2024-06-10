@@ -1,0 +1,61 @@
+#!/bin/bash
+
+set -e -o pipefail
+
+# Set the proper speadsheet id (in the url).
+# Make sure that the file can be read by user with the link.
+SPREADSHEET_ID="1kucKFn7njdfYU5F03OhHLjCAj4ZCcfoYLWlPMgli3zw"
+
+# This is our awk csv to json process.
+# It ignores lines with an empty 2nd colunm.
+# It converts the 1st column to "source" and the 2nd to "destination".
+# It converts the 3rd column to "permanent" (true if not false).
+# It converts the 4th, 5th, 6th and 7th columns to "has" (if present).
+AWK_SCRIPT=$(cat <<'AWK'
+BEGIN {
+	print("{\"redirects\": [")
+}
+NR > 1 && $2 != "" {
+	print(",")
+}
+$2 != "" {
+	print("{\"source\": \""$1"\", \"destination\": \""$2"\", \"permanent\": ");
+	print(tolower($3) == "false" ? "false":"true");
+}
+$2 != "" && $4 != "" && $5 != "" && $6 != "" && $7 != "" {
+	print(", ")
+	print("\"has\": [{ \"type\": \"query\", \"key\": \""$4"\", \"value\": \""$5"\" }, { \"type\": \"query\", \"key\": \""$6"\", \"value\": \""$7"\" }]");
+}
+$2 != "" && $4 != "" && $5 != "" && $6 == "" && $7 == "" {
+	print(", ")
+	print("\"has\": [{ \"type\": \"query\", \"key\": \""$4"\", \"value\": \""$5"\" }]");
+}
+$2 != "" {
+	print("}");
+}
+END {
+	print("]}")
+}
+AWK
+)
+
+echo "🐹 Downloading and crunching redirections..."
+
+# Download csv export (first sheet)
+curl -L -s "https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/export?exportFormat=csv" | \
+	# remove first line
+	tail -n +2 | \
+	# convert csv to json
+	# and save the result into the file
+	awk -F',' "${AWK_SCRIPT}" > redirects.json
+
+# Format json
+npm run format:file redirects.json > /dev/null
+
+echo "🌟 Redirections file created!"
+
+# Run the main script (this will take care of merging the redirects)
+./scripts/make-vercel-json.sh
+
+# Delete redirects file
+rm redirects.json

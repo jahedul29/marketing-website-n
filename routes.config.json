@@ -1,0 +1,66 @@
+{
+	"root": "[[locale]]",
+	"routes": [
+		{
+			"typeName": "Pages_default_Entry",
+			"uri": ["[...uri]"],
+			"dynamicImports": true
+		},
+		{
+			"typeName": "Blog_Blog_Entry",
+			"uri": ["blog"],
+			"dynamicImports": true
+		},
+		{
+			"typeName": "Articles_Default_Entry",
+			"uri": ["articles/{slug}"],
+			"dynamicImports": true
+		},
+		{
+			"typeName": "Resources_Default_Entry",
+			"uri": ["resources/{slug}"],
+			"dynamicImports": true
+		},
+		{
+			"typeName": "CustomerStories_Default_Entry",
+			"uri": ["customer-stories/{slug}"],
+			"dynamicImports": true
+		},
+		{
+			"typeName": "ResourcePortals_Default_Entry",
+			"uri": ["all-resources/{slug}"],
+			"dynamicImports": true
+		},
+		{
+			"typeName": "CustomerStoriesPortal_CustomerStoriesPortal_Entry",
+			"uri": ["customer-stories"],
+			"dynamicImports": true
+		},
+		{
+			"typeName": "LegalPages_default_Entry",
+			"uri": ["legal/{slug}"]
+		},
+		{
+			"typeName": "Articles_Category",
+			"uri": ["articles/categories/{slug}"]
+		},
+		{
+			"typeName": "Pricing_Pricing_Entry",
+			"uri": ["pricing"],
+			"dynamicImports": true
+		},
+		{
+			"typeName": "Press_Press_Entry",
+			"uri": ["press"]
+		},
+		{
+			"typeName": "Contact_Contact_Entry",
+			"uri": ["contact-us"]
+		},
+		{
+			"typeName": "Careers_Careers_Entry",
+			"uri": ["careers"],
+			"dynamicImports": true
+		}
+	]
+}

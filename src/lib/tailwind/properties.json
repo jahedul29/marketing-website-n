@@ -1,0 +1,21 @@
+{
+	"position=top-left": "top-0 left-0",
+	"position=top-center": "top-0 left-1/2 -translate-x-1/2",
+	"position=top-right": "top-0 right-0",
+	"position=top": "top-0 left-0 right-0",
+
+	"position=middle-left": "left-0 top-1/2 -translate-y-1/2",
+	"position=middle-center": "left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2",
+	"position=middle-right": "right-0 top-1/2 -translate-y-1/2",
+	"position=middle": "right-0 left-0 top-1/2 -translate-y-1/2",
+
+	"position=left": "top-0 bottom-0 left-0",
+	"position=cover": "top-0 right-0 bottom-0 left-0",
+	"position=right": "top-0 right-0 bottom-0",
+	"position=auto": "",
+
+	"position=bottom-left": "bottom-0 left-0",
+	"position=bottom-center": "bottom-0 left-1/2 -translate-x-1/2",
+	"position=bottom-right": "bottom-0 right-0",
+	"position=bottom": "bottom-0 left-0 right-0"
+}

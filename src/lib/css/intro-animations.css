@@ -1,0 +1,97 @@
+._intro-header,
+._intro-fade-in,
+._intro-bubble-fade-in,
+._intro-reveal,
+._intro-reveal-sm,
+._intro-reveal-lg,
+._intro-img-scale-down {
+	--base-delay: 100ms;
+	--section-base-delay: 200ms;
+	--section-delay: calc(var(--section, 0) * var(--section-base-delay));
+	--item-base-delay: 25ms;
+	--item-delay: calc(var(--i, 0) * var(--item-base-delay));
+}
+
+._intro-header {
+	animation: intro-reveal-sm 1000ms var(--ease-out-expo) both;
+	animation-delay: calc(var(--base-delay) + var(--section-delay, 0) + var(--item-delay));
+}
+
+._intro-fade-in {
+	animation: fade-in 1000ms ease-out var(--section-delay, 0) both;
+}
+
+._intro-bubble-fade-in {
+	animation: fade-in 300ms ease-out
+		calc(calc(var(--section-delay, 0) + calc(calc(var(--i) + 1) * 80ms))) both;
+}
+
+._intro-reveal,
+._intro-reveal-sm,
+._intro-reveal-lg {
+	animation: intro-reveal 1500ms var(--ease-out-expo) both;
+	animation-delay: calc(var(--section-delay, 0) + calc(var(--i, 0) * 50ms));
+}
+
+._intro-reveal-sm {
+	animation-name: intro-reveal-sm;
+}
+
+._intro-reveal-lg {
+	animation-name: intro-reveal-lg;
+}
+
+._intro-img-scale-down {
+	animation: scale-down 1400ms ease-out var(--section-delay, 0) both;
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes intro-reveal {
+	from {
+		transform: translate3d(0, 2.4rem, 0);
+		opacity: 0;
+	}
+	to {
+		transform: none;
+		opacity: 1;
+	}
+}
+
+@keyframes intro-reveal-lg {
+	from {
+		transform: translate3d(0, 4rem, 0);
+		opacity: 0;
+	}
+	to {
+		transform: none;
+		opacity: 1;
+	}
+}
+
+@keyframes intro-reveal-sm {
+	from {
+		transform: translate3d(0, 1.6rem, 0);
+		opacity: 0;
+	}
+	to {
+		transform: none;
+		opacity: 1;
+	}
+}
+
+@keyframes scale-down {
+	from {
+		transform: scale(1.05);
+	}
+	to {
+		transform: none;
+	}
+}

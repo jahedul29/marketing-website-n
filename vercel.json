@@ -1,0 +1,359 @@
+{
+	"headers": [
+		{
+			"source": "/service-worker.js",
+			"headers": [
+				{
+					"key": "Cache-Control",
+					"value": "public, max-age=0, must-revalidate"
+				}
+			]
+		},
+		{
+			"source": "/(.*)(woff|woff2|ttf|eot|otf|svg|ico|jpg|jpeg|png|txt|xml)",
+			"headers": [
+				{
+					"key": "Cache-Control",
+					"value": "public, immutable, max-age=604800, s-maxage=604800, stale-while-revalidate=604800"
+				}
+			]
+		}
+	],
+	"redirects": [
+		{
+			"source": "/",
+			"destination": "/blog",
+			"permanent": true,
+			"has": [
+				{ "type": "query", "key": "post_type", "value": "blogs" },
+				{ "type": "query", "key": "p", "value": "4433" }
+			]
+		},
+		{
+			"source": "/",
+			"destination": "/blog",
+			"permanent": true,
+			"has": [
+				{ "type": "query", "key": "post_type", "value": "blogs" },
+				{ "type": "query", "key": "p", "value": "4435" }
+			]
+		},
+		{
+			"source": "/",
+			"destination": "/blog",
+			"permanent": true,
+			"has": [
+				{ "type": "query", "key": "post_type", "value": "blogs" },
+				{ "type": "query", "key": "p", "value": "4440" }
+			]
+		},
+		{
+			"source": "/",
+			"destination": "/blog",
+			"permanent": true,
+			"has": [
+				{ "type": "query", "key": "post_type", "value": "blogs" },
+				{ "type": "query", "key": "p", "value": "5936" }
+			]
+		},
+		{
+			"source": "/",
+			"destination": "/blog",
+			"permanent": true,
+			"has": [
+				{ "type": "query", "key": "post_type", "value": "blogs" },
+				{ "type": "query", "key": "p", "value": "5943" }
+			]
+		},
+		{
+			"source": "/",
+			"destination": "/blog",
+			"permanent": true,
+			"has": [
+				{ "type": "query", "key": "post_type", "value": "blogs" },
+				{ "type": "query", "key": "p", "value": "5995" }
+			]
+		},
+		{
+			"source": "/",
+			"destination": "/blog",
+			"permanent": true,
+			"has": [
+				{ "type": "query", "key": "post_type", "value": "blogs" },
+				{ "type": "query", "key": "p", "value": "6465" }
+			]
+		},
+		{
+			"source": "/",
+			"destination": "/blog",
+			"permanent": true,
+			"has": [
+				{ "type": "query", "key": "post_type", "value": "blogs" },
+				{ "type": "query", "key": "p", "value": "7228" }
+			]
+		},
+		{
+			"source": "/",
+			"destination": "/articles/supplier-recommendations",
+			"permanent": true,
+			"has": [
+				{ "type": "query", "key": "post_type", "value": "blogs" },
+				{ "type": "query", "key": "p", "value": "7293" }
+			]
+		},
+		{
+			"source": "/",
+			"destination": "/blog",
+			"permanent": true,
+			"has": [
+				{ "type": "query", "key": "post_type", "value": "blogs" },
+				{ "type": "query", "key": "p", "value": "7652" }
+			]
+		},
+		{
+			"source": "/",
+			"destination": "/articles/eager-to-learn",
+			"permanent": true,
+			"has": [
+				{ "type": "query", "key": "post_type", "value": "blogs" },
+				{ "type": "query", "key": "p", "value": "7776" }
+			]
+		},
+		{
+			"source": "/",
+			"destination": "/articles/whats-new-august-2022-product-updates",
+			"permanent": true,
+			"has": [
+				{ "type": "query", "key": "post_type", "value": "blogs" },
+				{ "type": "query", "key": "p", "value": "7918" }
+			]
+		},
+		{
+			"source": "/",
+			"destination": "/blog",
+			"permanent": true,
+			"has": [
+				{ "type": "query", "key": "post_type", "value": "blogs" },
+				{ "type": "query", "key": "p", "value": "7934" }
+			]
+		},
+		{
+			"source": "/",
+			"destination": "/blog",
+			"permanent": true,
+			"has": [
+				{ "type": "query", "key": "post_type", "value": "blogs" },
+				{ "type": "query", "key": "p", "value": "7972" }
+			]
+		},
+		{
+			"source": "/",
+			"destination": "/blog",
+			"permanent": true,
+			"has": [
+				{ "type": "query", "key": "post_type", "value": "blogs" },
+				{ "type": "query", "key": "p", "value": "7978" }
+			]
+		},
+		{
+			"source": "/",
+			"destination": "/blog",
+			"permanent": true,
+			"has": [
+				{ "type": "query", "key": "post_type", "value": "blogs" },
+				{ "type": "query", "key": "p", "value": "7981" }
+			]
+		},
+		{
+			"source": "/",
+			"destination": "/blog",
+			"permanent": true,
+			"has": [{ "type": "query", "key": "post_type", "value": "blogs" }]
+		},
+		{
+			"source": "/blog",
+			"destination": "/blog",
+			"permanent": false,
+			"has": [{ "type": "query", "key": "filter", "value": "event-education" }]
+		},
+		{
+			"source": "/blog",
+			"destination": "/articles/categories/event-trends",
+			"permanent": true,
+			"has": [{ "type": "query", "key": "filter", "value": "event-trends" }]
+		},
+		{
+			"source": "/blog",
+			"destination": "/blog",
+			"permanent": false,
+			"has": [{ "type": "query", "key": "filter", "value": "our-team" }]
+		},
+		{
+			"source": "/blog",
+			"destination": "/articles/categories/our-product",
+			"permanent": true,
+			"has": [{ "type": "query", "key": "filter", "value": "the-product" }]
+		},
+		{
+			"source": "/blog",
+			"destination": "/articles/categories/event-trends",
+			"permanent": true,
+			"has": [{ "type": "query", "key": "filter", "value": "event-trends" }]
+		},
+		{
+			"source": "/blogs/10-corporate-party-ideas-that-are-fun-all-year-round/",
+			"destination": "/blog",
+			"permanent": false
+		},
+		{
+			"source": "/blogs/10-step-checklist-to-start-planning-your-corporate-event/",
+			"destination": "/blog",
+			"permanent": false
+		},
+		{
+			"source": "/blogs/15-christmas-event-themes-and-activity-ideas-for-the-holiday-season/",
+			"destination": "/blog",
+			"permanent": false
+		},
+		{
+			"source": "/blogs/5-themes-for-your-halloween-party/",
+			"destination": "/blog",
+			"permanent": false
+		},
+		{
+			"source": "/blogs/5-tips-to-plan-the-perfect-corporate-event/",
+			"destination": "/blog",
+			"permanent": false
+		},
+		{ "source": "/blogs/a-planned-community/", "destination": "/blog", "permanent": false },
+		{ "source": "/blogs/addressing-payments/", "destination": "/blog", "permanent": false },
+		{
+			"source": "/blogs/advice-from-4-event-experts/",
+			"destination": "/articles/advice-from-4-event-experts",
+			"permanent": true
+		},
+		{
+			"source": "/blogs/bring-your-team-together/",
+			"destination": "/articles/bring-your-team-together",
+			"permanent": true
+		},
+		{ "source": "/blogs/broaden-my-skills/", "destination": "/blog", "permanent": false },
+		{
+			"source": "/blogs/celebrate-together-this-year/",
+			"destination": "/blog",
+			"permanent": false
+		},
+		{
+			"source": "/blogs/celebrating-valentines-day/",
+			"destination": "/blog",
+			"permanent": false
+		},
+		{
+			"source": "/blogs/conference-planning-tips-checklists-to-help-you-organize-a-successful-event/",
+			"destination": "/blog",
+			"permanent": false
+		},
+		{ "source": "/blogs/develop-relationships/", "destination": "/blog", "permanent": false },
+		{
+			"source": "/blogs/eager-to-learn-￼/",
+			"destination": "/articles/eager-to-learn",
+			"permanent": true
+		},
+		{
+			"source": "/blogs/event-planning-tactics-for-2022/",
+			"destination": "/blog",
+			"permanent": false
+		},
+		{ "source": "/blogs/filters-and-icons/", "destination": "/blog", "permanent": false },
+		{ "source": "/blogs/heard-and-encouraged/", "destination": "/blog", "permanent": false },
+		{ "source": "/blogs/help-them-rise-up/", "destination": "/blog", "permanent": false },
+		{ "source": "/blogs/holidays-with-planned/", "destination": "/blog", "permanent": false },
+		{ "source": "/blogs/improving-every-day/", "destination": "/blog", "permanent": false },
+		{ "source": "/blogs/learning-to-adapt/", "destination": "/blog", "permanent": false },
+		{ "source": "/blogs/marketplace-categories/", "destination": "/blog", "permanent": false },
+		{ "source": "/blogs/more-collaborative/", "destination": "/blog", "permanent": false },
+		{ "source": "/blogs/one-earth-one-event/", "destination": "/blog", "permanent": false },
+		{ "source": "/blogs/our-newest-feature-rfp/", "destination": "/blog", "permanent": false },
+		{
+			"source": "/blogs/ownership-and-involvement/",
+			"destination": "/blog",
+			"permanent": false
+		},
+		{ "source": "/blogs/part-of-the-evolution/", "destination": "/blog", "permanent": false },
+		{ "source": "/blogs/planned-pricing-model/", "destination": "/blog", "permanent": false },
+		{
+			"source": "/blogs/planning-a-company-offsite/",
+			"destination": "/articles/planning-a-company-offsite",
+			"permanent": true
+		},
+		{ "source": "/blogs/pure-passion/", "destination": "/blog", "permanent": false },
+		{
+			"source": "/blogs/saving-money-with-planned/",
+			"destination": "/blog",
+			"permanent": false
+		},
+		{
+			"source": "/blogs/supplier-recommendations/",
+			"destination": "/articles/supplier-recommendations",
+			"permanent": true
+		},
+		{
+			"source": "/blogs/the-future-of-events-and-the-planet/",
+			"destination": "/blog",
+			"permanent": false
+		},
+		{ "source": "/blogs/the-women-of-planned/", "destination": "/blog", "permanent": false },
+		{ "source": "/blogs/we-asked-you-answered/", "destination": "/blog", "permanent": false },
+		{ "source": "/blogs/whats-new-2/", "destination": "/blog", "permanent": false },
+		{
+			"source": "/blogs/whats-new-3/",
+			"destination": "/articles/whats-new-august-2022-product-updates",
+			"permanent": true
+		},
+		{ "source": "/blogs/whats-new-in-planned/", "destination": "/blog", "permanent": false },
+		{ "source": "/blogs/whats-new/", "destination": "/blog", "permanent": false },
+		{ "source": "/blogs/(.*)", "destination": "/blog", "permanent": true },
+		{ "source": "/book-a-demo/", "destination": "/contact-us", "permanent": true },
+		{
+			"source": "/case_studies/bright-baskets/",
+			"destination": "/customer-stories",
+			"permanent": false
+		},
+		{
+			"source": "/case_studies/defining-the-best-technique-together/",
+			"destination": "/customer-stories",
+			"permanent": false
+		},
+		{
+			"source": "/case_studies/prspktvmedia/",
+			"destination": "/customer-stories",
+			"permanent": false
+		},
+		{
+			"source": "/case_studies/rejuvenating-events/",
+			"destination": "/customer-stories",
+			"permanent": false
+		},
+		{
+			"source": "/case_studies/world-vision/",
+			"destination": "/customer-stories/envisioning-a-better-world-with-world-vision",
+			"permanent": true
+		},
+		{ "source": "/case-studies", "destination": "/customer-stories", "permanent": true },
+		{ "source": "/company-savings", "destination": "/savings-and-payment", "permanent": true },
+		{ "source": "/contact-us/", "destination": "/contact-us", "permanent": true },
+		{ "source": "/covid", "destination": "/find-suppliers", "permanent": true },
+		{ "source": "/covid/", "destination": "/find-suppliers", "permanent": true },
+		{ "source": "/discovery/", "destination": "/find-suppliers", "permanent": true },
+		{ "source": "/efficient-booking/", "destination": "/planning-tools", "permanent": true },
+		{ "source": "/faqs", "destination": "/contact-us", "permanent": true },
+		{ "source": "/faqs/", "destination": "/contact-us", "permanent": true },
+		{ "source": "/our-services/", "destination": "/pricing", "permanent": true },
+		{ "source": "/packages/", "destination": "/find-suppliers", "permanent": true },
+		{ "source": "/pricing/", "destination": "/pricing", "permanent": true },
+		{ "source": "/privacy/", "destination": "/legal/privacy-policy", "permanent": true },
+		{ "source": "/referral-program/", "destination": "/pricing", "permanent": true },
+		{ "source": "/terms/", "destination": "/legal/terms-of-use", "permanent": true },
+		{ "source": "/virtual/", "destination": "/planning-tools", "permanent": true }
+	]
+}

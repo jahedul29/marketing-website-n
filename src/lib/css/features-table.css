@@ -1,0 +1,12 @@
+@layer components {
+	._features-table-grid-columns {
+		grid-template-columns: theme('spacing.132') repeat(2, minmax(theme('spacing.80'), 1fr));
+		gap: theme('spacing.8');
+	}
+	@screen bp {
+		._features-table-grid-columns {
+			grid-template-columns: 1fr repeat(2, theme('spacing.360'));
+			gap: theme('spacing.24');
+		}
+	}
+}

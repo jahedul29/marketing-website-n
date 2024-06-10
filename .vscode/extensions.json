@@ -1,0 +1,14 @@
+{
+	"recommendations": [
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+		"kumar-harsh.graphql-for-vscode",
+		"streetsidesoftware.code-spell-checker",
+		"streetsidesoftware.code-spell-checker-french",
+		"EditorConfig.EditorConfig",
+		"svelte.svelte-vscode",
+		"bradlc.vscode-tailwindcss",
+		"ZixuanChen.vitest-explorer",
+		"github.vscode-github-actions"
+	]
+}

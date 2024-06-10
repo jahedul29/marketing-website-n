@@ -1,0 +1,115 @@
+@layer components {
+	._primary {
+		@apply text-16;
+
+		&:focus-visible {
+			@apply ring-0;
+
+			._primary-inner {
+				@apply ring-4 ring-blue-500;
+			}
+
+			._primary-inner.blue {
+				@apply ring-grey-900;
+			}
+		}
+
+		._primary-inner {
+			transition: 125ms ease-out;
+			transition-property: background-color, color;
+
+			._primary-inner-bg {
+				box-shadow: inset 0 0 0 0.2rem var(--bg-color);
+			}
+
+			&.filled {
+				background-color: var(--bg-color);
+				color: var(--text-color);
+
+				@screen pointer {
+					&:hover {
+						background-color: transparent;
+						color: var(--bg-color);
+					}
+				}
+
+				&.blue {
+					--bg-color: theme('colors.blue.500.DEFAULT');
+					--text-color: theme('colors.white.DEFAULT');
+
+					&:active {
+						--bg-color: theme('colors.blue.500.DEFAULT / 75%');
+					}
+				}
+
+				&.black {
+					--bg-color: theme('colors.grey.900.DEFAULT');
+					--text-color: theme('colors.white.DEFAULT');
+
+					&:active {
+						--bg-color: theme('colors.black.750.alpha');
+					}
+				}
+
+				&:active {
+					transition-duration: 0s;
+				}
+			}
+
+			&.outlined {
+				color: var(--bg-color);
+
+				&.white {
+					--bg-color: theme('colors.white.DEFAULT');
+					--text-color: theme('colors.grey.900.DEFAULT');
+
+					&:active {
+						--bg-color: theme('colors.white.750.alpha');
+					}
+				}
+
+				&.black {
+					--bg-color: theme('colors.grey.900.DEFAULT');
+					--text-color: theme('colors.white.DEFAULT');
+
+					&:active {
+						--bg-color: theme('colors.black.750.alpha');
+					}
+				}
+
+				@screen pointer {
+					&:hover {
+						background-color: var(--bg-color);
+						color: var(--text-color);
+					}
+				}
+
+				&:active {
+					transition-duration: 0s;
+					background-color: var(--bg-color);
+					color: var(--text-color);
+
+					._primary-inner-bg {
+						box-shadow: none;
+					}
+				}
+			}
+
+			&.sm {
+				@apply px-16 py-8;
+			}
+
+			&.lg {
+				@apply px-20 py-12;
+			}
+
+			&.xl {
+				@apply px-20 py-16;
+			}
+
+			&.xxl {
+				@apply px-40 py-20;
+			}
+		}
+	}
+}

@@ -1,0 +1,130 @@
+@layer components {
+	._prose {
+		a {
+			@apply text-blue-500 underline transition-colors hover:text-blue-700;
+		}
+
+		hr {
+			@apply border-none bg-black-100-alpha;
+			height: 1px;
+		}
+
+		ol,
+		ul {
+			list-style-position: inside;
+			@apply space-y-16;
+
+			li {
+				@apply relative pl-28;
+
+				&::before {
+					@apply absolute left-0 top-0;
+				}
+			}
+		}
+
+		ul li::before {
+			@apply h-12 w-12 rounded-full border-2 border-grey-900;
+			top: 0.4em;
+		}
+
+		ol {
+			counter-reset: list;
+
+			li {
+				counter-increment: list;
+
+				&::before {
+					content: counter(list) '.';
+				}
+			}
+		}
+
+		ul {
+			li {
+				@apply relative;
+
+				&::before {
+					content: '';
+					@apply absolute;
+				}
+			}
+		}
+
+		small._note {
+			@apply block border-t-1 border-black-100-alpha pt-8 text-14 leading-30 text-black-500-alpha bp:text-16;
+		}
+	}
+
+	._prose._block,
+	._prose._block-sm,
+	._prose._block-embed {
+		h2,
+		h3,
+		h4 {
+			@apply font-medium leading-20;
+		}
+
+		h2 {
+			@apply text-32 bp:text-48;
+		}
+
+		h3 {
+			@apply text-26 bp:text-40;
+		}
+
+		h4 {
+			@apply text-20 bp:text-26;
+		}
+
+		p,
+		ul,
+		ol {
+			@apply text-16 leading-40 bp:text-20;
+		}
+
+		table {
+			@apply w-full text-16 leading-20;
+
+			&,
+			th,
+			td {
+				@apply border-1 border-grey-900;
+			}
+
+			th,
+			td {
+				@apply p-12;
+			}
+		}
+	}
+
+	._prose._block,
+	._prose._block-embed {
+		> * {
+			@apply mt-28;
+		}
+
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			@apply mt-60;
+		}
+
+		> *:first-child {
+			@apply mt-0;
+		}
+	}
+
+	._prose._block-sm {
+		@apply space-y-24 bp:space-y-20;
+	}
+
+	._prose._block-embed {
+		ul {
+			margin-top: 1rem;
+		}
+	}
+}
