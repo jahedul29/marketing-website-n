@@ -9,10 +9,9 @@
 	export let plainText: Maybe<string> = null;
 	export let buttons: Maybe<Buttons_Default_Entry>[] = [];
 	export let logos: Maybe<Assets_Asset>[] = [];
-
 </script>
 
-<section class="mx-auto max-w-hd mt-0 py-20 pb-0 text-center bp:py-120 bp:pb-0 bp:text-left">
+<section class="mx-auto mt-0 max-w-hd py-20 pb-0 text-center bp:py-120 bp:pb-0 bp:text-left">
 	<div class="mx-auto flex max-w-360 flex-col items-center text-center bp:max-w-1024">
 		{#if displayTitle}
 			<h2 class="text-900 font-medium leading-20">
@@ -41,11 +40,8 @@
 	</div>
 	<WhatWeDo />
 	{#if logos?.length}
-		<div
-			class="_intro-reveal-sm pointer-events-auto mt-80 w-full"
-			style="--section: 3;"
-		>
-			<HeaderLogos {logos} center={true} is_hero={true}/>
+		<div class="_intro-reveal-sm pointer-events-auto mt-80 w-full" style="--section: 3;">
+			<HeaderLogos {logos} center={true} is_hero={true} />
 		</div>
 	{/if}
 </section>

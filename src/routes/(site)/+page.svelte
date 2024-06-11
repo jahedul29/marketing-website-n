@@ -20,12 +20,7 @@
 <div>
 	<HomeGraphic />
 	<DefaultRythm>
-		<HeaderHome
-			{displayTitle}
-			{plainText}
-			{buttons}
-			logos={homeLogos}
-		>
+		<HeaderHome {displayTitle} {plainText} {buttons} logos={homeLogos}>
 			<svelte:fragment slot="modules">
 				{#if modules?.length}
 					<DefaultRythm>
@@ -34,7 +29,7 @@
 				{/if}
 			</svelte:fragment>
 		</HeaderHome>
-		<ImageTab/>
+		<ImageTab />
 		<ComponentSelector entries={modules} />
 	</DefaultRythm>
 </div>
