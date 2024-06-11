@@ -9,6 +9,7 @@
 	import { toButtonEntry } from '$lib/utils/types/Button';
 
 	export let entry: Modules_Grid_Entry;
+	export let leftAlign: boolean = false;
 
 	const { surtitle, displayTitle, plainText, gridItems } = entry || {};
 </script>
@@ -22,7 +23,12 @@
 					{@const { color, displayTitle, text } = item || {}}
 					{@const icon = item?.icon?.[0]}
 					{@const button = toButtonEntry(item?.button?.[0])}
-					<li class="flex flex-col items-center space-y-24 bp:max-w-1/2 bp:flex-1">
+
+					<li
+						class={`flex flex-col ${
+							!leftAlign && 'items-center'
+						} space-y-24 bp:max-w-1/2 bp:flex-1`}
+					>
 						{#if icon}
 							<div
 								class="flex h-60 w-60 items-center justify-center rounded-8"
@@ -35,7 +41,11 @@
 								/>
 							</div>
 						{/if}
-						<div class="flex flex-col items-center space-y-16 text-center">
+						<div
+							class={`flex flex-col space-y-16 ${
+								leftAlign ? ' text-left' : 'items-center text-center'
+							}`}
+						>
 							{#if displayTitle}
 								<h3 class="text-20 font-medium leading-20 bp:text-26">
 									{displayTitle}
