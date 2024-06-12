@@ -9,7 +9,6 @@
 
 	const { entry, pricingPlans, pricingFeatures } = data || {};
 	const { modules, pricingTableTitle } = entry || {};
-	console.log(modules);
 </script>
 
 <DefaultRythm>

@@ -51,7 +51,7 @@
 					<ModuleHeading {surtitle} {title} textAlign="center|left" />
 				{/if}
 				{#if media}
-					<Media class="mt-40 rounded-16 bp:hidden" {media} />
+					<Media class="m-auto mt-40 rounded-16 bp:hidden" {media} />
 				{/if}
 				{#if text}
 					<div class="mt-40 bp:mt-24">
@@ -67,7 +67,7 @@
 			{#if media}
 				<div class="hidden flex-shrink-0 flex-grow bp:block">
 					<Media
-						class="h-full max-h-800 w-full max-w-800 rounded-20 object-cover"
+						class="h-full max-h-800 w-full max-w-800 rounded-20 object-cover text-center"
 						{media}
 					/>
 				</div>

@@ -7,6 +7,7 @@
 	import Next from '$com/svg/Next.svelte';
 	import DefaultVideo from '$com/ui/DefaultVideo.svelte';
 	import Image from '$com/ui/Image.svelte';
+	import ButtonPrimary from '$com/buttons/ButtonPrimary.svelte';
 
 	type Direction = 'next' | 'prev';
 
@@ -113,7 +114,7 @@
 						{#each quotes as quote, i}
 							{@const isActive = i === active}
 							{@const isNextActive = i === nextActive}
-							{@const { source, role } = quote || {}}
+							{@const { source, role, button } = quote || {}}
 							{#if source || role}
 								<div
 									class="flex flex-col items-start text-14 bp:text-20"
@@ -132,6 +133,11 @@
 									{/if}
 									{#if role}
 										<span class="text-black-750-alpha">{role}</span>
+									{/if}
+									{#if button}
+										<div class="mt-32 flex space-x-16">
+											<ButtonPrimary {button} color={'black'} size="lg" />
+										</div>
 									{/if}
 								</div>
 							{/if}

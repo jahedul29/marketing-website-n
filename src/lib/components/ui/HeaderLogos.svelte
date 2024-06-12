@@ -16,7 +16,9 @@
 			<h2 class="text-300 text-black-750-alpha">{logosTitle}</h2>
 		{/if}
 		<div
-			class="grid w-full grid-cols-3 place-items-center {is_hero ? 'bp:gap-60 gap-0' : 'gap-32'} opacity-50 bp:flex bp:flex-wrap"
+			class="grid w-full grid-cols-3 place-items-center {is_hero
+				? 'gap-0 bp:gap-60'
+				: 'gap-32'} opacity-50 bp:flex bp:flex-wrap"
 			class:bp:justify-center={center}
 		>
 			{#each logos as logo}

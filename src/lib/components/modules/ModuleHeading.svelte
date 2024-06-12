@@ -6,6 +6,7 @@
 	export let title: Maybe<string> | undefined = null;
 	export let text: Maybe<string> | undefined = null;
 	export let textAlign: Responsive<'left' | 'center'> = 'center';
+	export let maxWidth: string = '660';
 
 	const alignClasses = () => {
 		const textClass = tailwindify('text', textAlign);
@@ -30,7 +31,7 @@
 	};
 </script>
 
-<div class="flex flex-col bp:max-w-660 {alignClasses()}">
+<div class="flex flex-col bp:max-w-{maxWidth} {alignClasses()}">
 	<slot name="surtitle">
 		{#if surtitle}
 			<p class="mb-12 text-16 font-medium leading-10 text-blue-500">{surtitle}</p>

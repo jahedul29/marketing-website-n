@@ -1,9 +1,9 @@
-import propToClass from './tailwind/transform/property-to-class.cjs';
 import focusVisible from 'postcss-focus-visible';
 import scrollbarHide from 'tailwind-scrollbar-hide';
-import watchdog from './tailwind/plugins/watchdog.js';
-import gridStack from './tailwind/plugins/grid-stack.js';
 import env from './env.config.js';
+import gridStack from './tailwind/plugins/grid-stack.js';
+import watchdog from './tailwind/plugins/watchdog.js';
+import propToClass from './tailwind/transform/property-to-class.cjs';
 
 const screenExceptions = ['touch', 'pointer'];
 
@@ -337,7 +337,10 @@ export default {
 				100: `0px 8px 40px ${theme('colors.black.100.alpha')}`,
 				500: `0px 8px 24px ${theme('colors.black.100.alpha')}`,
 				600: `0px 16px 40px 2px ${theme('colors.black.100.alpha')}`,
-				700: `0px 4px 4px ${theme('colors.black.100.alpha')}`
+				700: `0px 4px 4px ${theme('colors.black.100.alpha')}`,
+				900: `0px 8px 9px 2px ${theme('colors.black.100.alpha')}`,
+				'custom-1':
+					'0px 9px 46px 8px #41494D1A, 0px 24px 38px 3px #0A398014, 0px 11px 15px -7px #41494D0D'
 			}),
 			backdropBlur: {
 				900: '16px',

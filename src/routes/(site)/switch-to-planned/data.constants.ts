@@ -45,7 +45,7 @@ export const textMediaEntry1 = {
 	reverse: true,
 	richText:
 		'<p>Source events and travel into one tool to drive adoption and gain negotiating power.</p>',
-	media: [{ url: '/img/switchToPlanned/events-travel.png', alt: '', srcset: '', kind: 'image' }]
+	media: [{ url: '/img/switchToPlanned/events-n-travel.svg', alt: '', srcset: '', kind: 'image' }]
 };
 
 export const textMediaEntry2 = {
@@ -69,20 +69,39 @@ export const faqsData = {
 	drawerItems: [
 		{
 			id: '3338',
-			displayTitle: 'Can I switch plans later?',
+			displayTitle: 'What volume can you handle?',
 			richText:
-				'<p>Yes! When you\'re ready, we\'re here. <a href="https://planned.com/contact-us" target="_blank" rel="noreferrer noopener">Contact our support team</a> any time.</p>'
+				'<p>Morbi amet volutpat massa, integer. At vitae, in aenean sagittis, sed. Ut nunc est eu amet ridiculus tempor consectetur. Morbi amet volutpat massa, integer. At vitae, in aenean sagittis, sed. Ut nunc est eu amet ridiculus tempor consectetur.</p>'
 		},
 		{
-			id: '3339',
-			displayTitle: 'How does billing work?',
-			richText: '<p>You can pay via credit card or bank transfer.</p>'
+			id: '3338',
+			displayTitle: 'How big is your team?',
+			richText:
+				'<p>Morbi amet volutpat massa, integer. At vitae, in aenean sagittis, sed. Ut nunc est eu amet ridiculus tempor consectetur. Morbi amet volutpat massa, integer. At vitae, in aenean sagittis, sed. Ut nunc est eu amet ridiculus tempor consectetur.</p>'
 		},
 		{
-			id: '3340',
-			displayTitle: 'How can I give feedback on features?',
+			id: '3338',
+			displayTitle: 'Are you global?',
 			richText:
-				'<p>We always welcome comments on the user experience. Share your ideas with us <a href="https://planned.com/contact-us" target="_blank" rel="noreferrer noopener">here</a>.</p>'
+				'<p>Morbi amet volutpat massa, integer. At vitae, in aenean sagittis, sed. Ut nunc est eu amet ridiculus tempor consectetur. Morbi amet volutpat massa, integer. At vitae, in aenean sagittis, sed. Ut nunc est eu amet ridiculus tempor consectetur.</p>'
+		},
+		{
+			id: '3338',
+			displayTitle: 'What’s your pricing?',
+			richText:
+				'<p>Morbi amet volutpat massa, integer. At vitae, in aenean sagittis, sed. Ut nunc est eu amet ridiculus tempor consectetur. Morbi amet volutpat massa, integer. At vitae, in aenean sagittis, sed. Ut nunc est eu amet ridiculus tempor consectetur.</p>'
+		},
+		{
+			id: '3338',
+			displayTitle: 'How do you work with TMCs?',
+			richText:
+				'<p>Morbi amet volutpat massa, integer. At vitae, in aenean sagittis, sed. Ut nunc est eu amet ridiculus tempor consectetur. Morbi amet volutpat massa, integer. At vitae, in aenean sagittis, sed. Ut nunc est eu amet ridiculus tempor consectetur.</p>'
+		},
+		{
+			id: '3338',
+			displayTitle: 'How do you integrate with expense management tools',
+			richText:
+				'<p>Morbi amet volutpat massa, integer. At vitae, in aenean sagittis, sed. Ut nunc est eu amet ridiculus tempor consectetur. Morbi amet volutpat massa, integer. At vitae, in aenean sagittis, sed. Ut nunc est eu amet ridiculus tempor consectetur.</p>'
 		}
 	]
 };
@@ -95,7 +114,7 @@ export const gridData = {
 		'From implementation to daily support, we’ll work by your side to help you get the most out of your T&E program.',
 	gridItems: [
 		{
-			color: '#C2E6FF',
+			color: 'lightblue',
 			icon: [
 				{
 					url: '/img/switchToPlanned/icons/clock.png',
@@ -103,9 +122,9 @@ export const gridData = {
 					height: 38,
 					alt: null,
 					srcset: '/img/switchToPlanned/icons/clock.png',
-					kind: 'image',
-					hasFocalPoint: false,
-					focalPoint: [0.5, 0.5]
+					kind: 'image'
+					// hasFocalPoint: false
+					// focalPoint: [0.5, 0.5]
 				}
 			],
 			displayTitle: '60-day implementation',
@@ -113,7 +132,7 @@ export const gridData = {
 			button: []
 		},
 		{
-			color: '#C2E6FF',
+			color: 'lightblue',
 			icon: [
 				{
 					url: '/img/switchToPlanned/icons/chat.png',
@@ -131,7 +150,7 @@ export const gridData = {
 			button: []
 		},
 		{
-			color: '#C2E6FF',
+			color: 'lightblue',
 			icon: [
 				{
 					url: '/img/switchToPlanned/icons/chart.png',
@@ -171,7 +190,26 @@ export const testimonialData = {
 				}
 			],
 			poster: [],
-			logo: []
+			logo: [],
+			button: {
+				__typename: 'buttons_default_Entry',
+				label: 'Download case study',
+				externalUrl: 'https://meetings.hubspot.com/david1616',
+				siteEntry: [],
+				siteCategory: [],
+				modalEmbed: []
+			}
 		}
 	]
+};
+
+export const topHeadingMedia = {
+	url: 'https://cms.planned.com/uploads/_AUTOxAUTO_crop_center-center_80_none_ns/contracting_banner@2x.webp',
+	width: 1600,
+	height: 1600,
+	alt: null,
+	srcset: 'https://cms.planned.com/uploads/_100xAUTO_crop_center-center_none_ns/contracting_banner@2x.webp 100w, https://cms.planned.com/uploads/_200xAUTO_crop_center-center_none_ns/contracting_banner@2x.webp 200w, https://cms.planned.com/uploads/_300xAUTO_crop_center-center_none_ns/contracting_banner@2x.webp 300w, https://cms.planned.com/uploads/_400xAUTO_crop_center-center_none_ns/contracting_banner@2x.webp 400w, https://cms.planned.com/uploads/_600xAUTO_crop_center-center_none_ns/contracting_banner@2x.webp 600w, https://cms.planned.com/uploads/_800xAUTO_crop_center-center_none_ns/contracting_banner@2x.webp 800w, https://cms.planned.com/uploads/_1000xAUTO_crop_center-center_none_ns/contracting_banner@2x.webp 1000w, https://cms.planned.com/uploads/_1200xAUTO_crop_center-center_none_ns/contracting_banner@2x.webp 1200w, https://cms.planned.com/uploads/_1600xAUTO_crop_center-center_none_ns/contracting_banner@2x.webp 1600w, https://cms.planned.com/uploads/_2000xAUTO_crop_center-center_none_ns/contracting_banner@2x.webp 2000w',
+	kind: 'image',
+	hasFocalPoint: false,
+	focalPoint: [0.5, 0.5]
 };

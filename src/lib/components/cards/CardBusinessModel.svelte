@@ -4,7 +4,7 @@
 
 <a
 	href="#"
-	class="hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 flex max-w-580 flex-col items-center rounded-24 bg-grey-50 shadow-lg bp:max-w-xl bp:flex-row"
+	class="hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 flex max-w-580 flex-col items-center rounded-24 bg-grey-50 shadow-900 bp:max-w-xl bp:flex-row"
 >
 	<div class="leading-normal flex flex-col justify-between p-40">
 		<ModuleHeading
